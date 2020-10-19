@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<a href="#menu" id="menuLink" class="menu-link"><span></span></a>
+<div id="menu">
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- ロゴ -->
+        <a class="navbar-brand" href="#">
+            <img src="/static/img/logo.png" width="60" height="30" class="d-inline-block align-top" alt="">
+            Rabbit Express
+        </a>
+        <!-- 検索 -->
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="fa fa-search"></span> 検索</button>
+        </form>
+        <!-- アカウント -->
+        <span class="nav-item">
+            <a class="nav-link" href="#">アカウント</a>
+        </span>
+        <!-- カート -->
+        <a class="navbar-brand" href="#">
+            <img src="/static/img/cart.png" width="60" height="30" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <ul class="menu list-inline">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</div>
+
+<div class="copyright">
+    <div class="container">
+        <div class="row text-center">
+            <p>© 2020 RabbitExpress</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
